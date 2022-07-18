@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Where all the RV items will be placed for details activity-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/colour"
+                android:text="Colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16dp">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Prices"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text="IN STOCK"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:gravity="center_vertical">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:weightSum="10">
+
+                <Button
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text="Buy Now">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text="Add to cart">
+                </Button>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.25"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Specifications"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="bottom|left"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Screen Size:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Battery Capacity:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Memory Size:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Storage Size:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Rear Camera:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Data Connection:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/screen_size"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:layout_marginLeft="20dp"
+                android:text="Screen Size"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/bat_cap"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Battery Capacity"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/memory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Memory"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/storage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Storage"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Camera"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/data_con"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:text="Data Connection"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:gravity="bottom|left"
+                android:textSize="18sp">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

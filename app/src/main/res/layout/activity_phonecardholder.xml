@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--How each card view will look for all the list activities-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp">
+
+      <LinearLayout
+          android:id="@+id/samsung_image"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/samsung_image_view"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:weightSum="10">
+
+          <TextView
+              android:id="@+id/phone_name"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:text="Name"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              android:fontFamily="sans-serif-condensed"
+              android:layout_weight="3">
+          </TextView>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="0dp"
+              android:layout_weight="7"
+              android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:layout_weight="5"
+                android:text="IN STOCK"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginBottom="10dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Price"
+                android:textSize="18sp"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="10dp">
+            </TextView>
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+  </FrameLayout>
+
